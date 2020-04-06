@@ -16,9 +16,9 @@ function getListByFilter(list, filter){
         case VisibilityFilters.SHOW_ALL:
             return list;
         case VisibilityFilters.SHOW_ACTIVE:
-            return list.filter(item => item.completed);
-        case VisibilityFilters.SHOW_COMPLETED:
             return list.filter(item => !item.completed);
+        case VisibilityFilters.SHOW_COMPLETED:
+            return list.filter(item => item.completed);
         default:
             return list;
     }
