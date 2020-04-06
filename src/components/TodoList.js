@@ -9,6 +9,11 @@ function TodoList({todos, toggleTodo}){
     return (
         <ul>{todos.map(todo => <Todo key = {todo.id} {...todo} onClick = {() => toggleTodo(todo.id)} /> )}</ul>
     );
+
+    // return (
+    //     <ul>{todos.map(todo => <li key = {todo.id} onClick = {() => toggleTodo(todo.id)} style = {{textDecoration: todo.completed ? 'line-through' : 'none'}}>{todo.text}</li>)}</ul>
+    // );
+
 }
 
 function getListByFilter(list, filter){

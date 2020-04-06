@@ -16,4 +16,5 @@ function Footer({dispatch}){
     </div>
     );
 }
+
 export default connect()(Footer);
